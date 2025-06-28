@@ -1,21 +1,47 @@
 @import "tailwindcss";
 
-* {
+/* * {
     padding: 0;
     margin: 0;
     border: 0;
+} */
+@layer base {
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+section {
+    padding: 0 20%;
+    width: 100%;
 }
 
-section {
-    padding: 10px 20%;
-    width: 100%;
+}
+h3 {
+    font-size: xx-large;
+}
+h2 {
+    font-size: x-large;
+    color: #0A2E72;
+}
+h1 {
+    /* font-size: large; */
+    color: #0A2E72;
+    font-weight: 900;
+    font-size: xx-large;
+}
+button {
+    background-color: blue;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: white;
 }
 #header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 #bgimg {
-    padding: 15rem 20%;
+    padding: 10rem 20%;
+    /* transform: translateY(-25px); */
+    margin-top: -25px;
 }
 #first-grid > div {
     border: thin solid rgba(195, 195, 195, 0.408);
@@ -42,23 +68,15 @@ section {
 #white-item {
     padding: 20px;
 }
-h3 {
-    font-size: xx-large;
-    color: #0A2E72;
+@media (max-width: 640px) {
+    #bgimg {
+    padding: 10rem 10%;
+    margin-top: -25px;
 }
-h2 {
-    font-size: x-large;
-    color: #0A2E72;
-}
-h1 {
-    font-size: large;
-    color: #0A2E72;
-    font-weight: 900;
-    font-size: xx-large;
-}
-button {
-    background-color: blue;
-    padding: 5px 20px;
-    border-radius: 50px;
-    color: white;
-}
+    h1 {
+      font-size: 15px;
+    }
+    #patient-section h3 {
+        font-size: 15px;
+    }
+  }
