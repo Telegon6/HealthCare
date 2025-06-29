@@ -344,6 +344,9 @@
   .bg-\[\#F8F8F8\] {
     background-color: #F8F8F8;
   }
+  .bg-\[imagehome\.png\] {
+    background-color: imagehome.png;
+  }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
   }
@@ -352,6 +355,9 @@
   }
   .bg-\[url\(21\.svg\)\] {
     background-image: url(21.svg);
+  }
+  .bg-\[url\(Imagehome\.png\)\] {
+    background-image: url(Imagehome.png);
   }
   .bg-\[url\(footer\.png\)\] {
     background-image: url(footer.png);
@@ -493,11 +499,6 @@
   .max-sm\:grid-cols-2 {
     @media (width < 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .max-sm\:justify-self-start {
-    @media (width < 40rem) {
-      justify-self: flex-start;
     }
   }
   .max-sm\:px-\[10\%\] {
